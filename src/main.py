@@ -8,8 +8,6 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
-import reformatter
-import compiler
 
 scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive"]
 
@@ -21,8 +19,8 @@ client = gspread.authorize(credentials)
 # sheet.share('rogmasterrc@gmail.com', perm_type='user', role='writer')
 
 # run the other two scripts, reformatting and compiling raw data to be uploaded
-reformatter
-compiler
+# reformatter
+# compiler
 
 # edit editor (remove later)
 sheet = client.open("BANGING INHOUSES").worksheet("TOP")
