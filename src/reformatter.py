@@ -8,7 +8,7 @@
 import csv
 import pandas as pd
 
-with open('test1.csv', 'r') as infile, open('arranged.csv', 'w') as outfile:
+with open('game.csv', 'r') as infile, open('arranged.csv', 'w') as outfile:
     # outfile columns
     fieldnames = ['player', 'teamPosition', 'win', 'championsKilled', 'numDeaths', 'assists', 'minionsKilled',
                   'goldEarned', 'exp', 'totalDamageDealtToChampions', 'visionScore', 'objectivesStolen']

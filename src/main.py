@@ -5,6 +5,7 @@
 # public viewing.                                                     #
 #######################################################################
 
+import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
@@ -19,13 +20,8 @@ client = gspread.authorize(credentials)
 # sheet.share('rogmasterrc@gmail.com', perm_type='user', role='writer')
 
 # run the other two scripts, reformatting and compiling raw data to be uploaded
-# reformatter
-# compiler
-
-# edit editor (remove later)
-sheet = client.open("BANGING INHOUSES").worksheet("TOP")
-df = pd.read_csv('test1.csv')
-sheet.update([df.columns.values.tolist()] + df.values.tolist())
+os.system('reformatter.py')
+os.system('compiler.py')
 
 # top editor
 sheet = client.open("BANGING INHOUSES").worksheet("TOP")
