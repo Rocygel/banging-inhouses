@@ -1,11 +1,11 @@
-player,assists,championsKilled,exp,goldEarned,minionsKilled,numDeaths,objectivesStolen,teamPosition,totalDamageDealtToChampions,visionScore,win
-TheRoonster,12,4,19310,13974,244,7,0,TOP,31708,36,Fail
-Drëämy,13,5,15923,12616,33,10,0,JUNGLE,16535,28,Fail
-Obama Bin Bucky,13,9,14176,13740,36,14,0,UTILITY,11072,78,Fail
-l Duck I,7,17,19374,17210,219,8,0,MIDDLE,34120,22,Fail
-Ive too much BE,14,10,18373,16023,233,10,0,BOTTOM,24322,21,Fail
-Kinettech,9,7,20117,15661,238,7,0,TOP,25139,28,Win
-EierkraulerJoni,17,4,14890,10555,52,11,0,UTILITY,10319,50,Win
-Strophic,14,14,21829,19574,249,8,0,MIDDLE,52074,40,Win
-Chairman Kogmao,11,6,14162,13826,154,13,0,BOTTOM,18498,22,Win
-VıNINE Dirwi,7,18,21601,19894,79,6,0,JUNGLE,34084,25,Win
+player,assists,championsKilled,exp,goldEarned,minionsKilled,neutralMinionsKilled,numDeaths,objectivesStolen,teamPosition,totalDamageDealtToChampions,visionScore,win
+Drëämy,7,12,16887,14038,24,142,5,0,JUNGLE,26388,28,Win
+Kinettech,5,23,18975,20425,187,44,5,0,TOP,49623,26,Win
+JustKalii,17,3,13335,9793,25,5,6,0,UTILITY,12962,82,Win
+bozoBo,16,4,16296,12642,180,8,7,0,BOTTOM,20943,21,Win
+fakerbabbe,20,4,17295,12488,175,0,3,0,MIDDLE,22207,17,Win
+TheRoonster,6,5,13707,11535,47,116,14,0,JUNGLE,18793,24,Fail
+Reignover Fan,18,3,12600,10503,46,4,9,0,UTILITY,18386,47,Fail
+Sxrious,2,4,14259,11564,207,0,9,0,MIDDLE,19654,23,Fail
+Krampus Dirwi,5,12,15708,13923,207,6,4,0,BOTTOM,48032,14,Fail
+SantaInt,7,2,13023,10321,152,0,10,0,TOP,20328,22,Fail

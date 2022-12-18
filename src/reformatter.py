@@ -11,7 +11,8 @@ import pandas as pd
 with open('game.csv', 'r') as infile, open('arranged.csv', 'w') as outfile:
     # outfile columns
     fieldnames = ['player', 'teamPosition', 'win', 'championsKilled', 'numDeaths', 'assists', 'minionsKilled',
-                  'goldEarned', 'exp', 'totalDamageDealtToChampions', 'visionScore', 'objectivesStolen']
+                  'goldEarned', 'exp', 'totalDamageDealtToChampions', 'visionScore',
+                  'objectivesStolen', 'neutralMinionsKilled']
     # writer in outfile without empty lines containing above fieldnames
     writer = csv.DictWriter(outfile, fieldnames=fieldnames, lineterminator='\n')
     # reorder the header first
@@ -23,7 +24,12 @@ with open('game.csv', 'r') as infile, open('arranged.csv', 'w') as outfile:
 # rename column into readable "strings"
 df = pd.read_csv('arranged.csv')
 df = df.set_axis(['Player', 'Games Played', 'Win Rate', 'Kills/game', 'Deaths/game', 'Assists/game', 'CSM', 'GPM',
-                  'EXPM', 'DPM', 'VSM', 'Objectives Stolen'], axis=1, copy=False)
+                  'EXPM', 'DPM', 'VSM', 'Objectives Stolen', 'TempJgCS'], axis=1, copy=False)
+# add monsters killed to minions killed for CSM and delete monsters killed column
+for a in range(0, 10):
+    df.loc[a, 'CSM'] = (df.loc[a, 'CSM'] + df.loc[a, 'TempJgCS'])
+df.drop('TempJgCS', inplace=True, axis=1)
+# send to arranged.csv file
 df.to_csv('arranged.csv', index=False)
 
 # send to respective role files
